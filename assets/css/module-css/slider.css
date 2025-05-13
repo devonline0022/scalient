@@ -950,8 +950,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 28px;
-    top: 290px;
-    left: -41px;
+    top: 250px;
+    right: -15px;
     transform: rotate(-90deg);
     z-index: 5;
 }
@@ -991,8 +991,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 18px;
-    left: -57px;
-    bottom: 140px;
+    right: -15px;
+    bottom: 210px;
     transform: rotate(-90deg);
     z-index: 5;
 }
@@ -1032,7 +1032,7 @@
     position: absolute;
     top: 173px;
     bottom: 0;
-    left: 99px;
+    right: 120px;
     width: 1px;
     background-color: rgba(var(--techguru-white-rgb), .20);
     z-index: -1;

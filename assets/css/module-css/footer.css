@@ -762,7 +762,8 @@
     position: relative;
     display: block;
     padding: 45px 48px 43px;
-    background: var(--techguru-white);
+    background: linear-gradient(270deg, rgb(12 54 78) 0%, rgba(29, 37, 63, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
 }
 
@@ -837,15 +838,13 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
-    background-color: #1B3668;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--techguru-gray);
     margin-bottom: 12px;
 }
 
 .site-footer-two__contact-info {
     font-size: 16px;
-    color: #1B3668;
+    color: var(--techguru-gray);
     line-height: 24px;
 }
 
@@ -855,15 +854,15 @@
 }
 
 .site-footer-two__contact-mail {
-    color: #1B3668;
+    color: var(--techguru-gray);
 }
 
 .site-footer-two__contact-mail:hover {
-    color: #1B3668;
+    color: var(--techguru-gray);
 }
 
 .site-footer-two__contact-phone {
-    color: #1B3668;
+    color: var(--techguru-gray);
 }
 
 .site-footer-two__contact-phone:hover {

@@ -525,7 +525,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    background: linear-gradient(270deg, #FA5674 0%, #6065D4 100%);
+    background: linear-gradient(90deg, #00BAE9 10%, #006983 100%);
     border-radius: 50%;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -1101,7 +1101,7 @@
     line-height: 34px;
     font-weight: 700;
     counter-increment: count 1;
-    content: "0"counter(count);
+    content: "0" counter(count);
     color: var(--techguru-gray);
 }
 

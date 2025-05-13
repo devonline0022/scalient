@@ -410,16 +410,19 @@ ul {
 }
 
 .loader div:nth-child(1) {
-  background-color: rgba(var(--techguru-base-rgb), 1.0);
+  /* background-color: rgba(var(--techguru-base-rgb), 1.0); */
+  background-color: #00bae9;
 }
 
 .loader div:nth-child(2) {
-  background-color: rgba(var(--techguru-base-rgb), 0.70);
+  /* background-color: rgba(var(--techguru-base-rgb), 0.70); */
+  background-color: #006983;
   animation-delay: 0.2s;
 }
 
 .loader div:nth-child(3) {
-  background-color: rgba(var(--techguru-base-rgb), 0.40);
+  /* background-color: rgba(var(--techguru-base-rgb), 0.40); */
+  background-color: #1B3668;
   animation-delay: 0.4s;
 }
 
@@ -695,7 +698,8 @@ ul {
 }
 
 .xs-sidebar-group .content-inner .form-inner .form-group .form-inner__btn:hover {
-  color: var(--techguru-black);
+  /* color: var(--techguru-black); */
+  color: var(--techguru-white);
 }
 
 
@@ -1025,8 +1029,8 @@ ul {
 
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   position: relative;
 }
 
@@ -1095,7 +1099,7 @@ ul {
   font-family: "Font Awesome 5 Pro";
   content: "\f107";
   font-size: 15px;
-  color: var(--techguru-white);
+  color: #1B3668;
   transform: translateY(-50%);
   font-weight: 400;
   -webkit-transition: all 500ms ease;
@@ -1343,7 +1347,7 @@ ul {
   display: flex;
   align-items: center;
   font-size: 20px;
-  color: var(--techguru-white);
+  color: #1B3668;
   cursor: pointer;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -1912,7 +1916,7 @@ ul {
 }
 
 .main-menu-two__contact-list li .text p a:hover {
-  color: var(--techguru-base);
+  color: var(--techguru-white);
 }
 
 
@@ -2012,7 +2016,7 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-  padding: 29.5px 0;
+  /* padding: 29.5px 0; */
 }
 
 .main-menu-two__search-box {
@@ -2463,7 +2467,7 @@ ul {
   display: block;
   background-color: rgba(255, 255, 255, 1.0);
   font-size: 18px;
-  color: var(--techguru-black);
+  color: #1B3668;
   height: 70px;
   width: 100%;
   padding: 10px 30px 10px 75px;
@@ -2488,7 +2492,7 @@ ul {
   left: 0px;
   top: 0px;
   height: 70px;
-  background: var(--techguru-black);
+  background: #1B3668;
   text-align: center;
   font-size: 20px;
   color: var(--techguru-white);
@@ -2658,7 +2662,12 @@ ul {
   color: var(--techguru-base);
   text-decoration: underline;
 }
+
 .main-menu .main-menu__list>li ul {
   margin: 0px;
   padding: 0px;
+}
+
+.mainLogo {
+  width: 150px;
 }

@@ -135,7 +135,7 @@
     line-height: 80px;
     font-weight: 400;
     counter-increment: count 1;
-    content: "0"counter(count);
+    content: "0" counter(count);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(8, 17, 31, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -290,7 +290,7 @@
     font-weight: 700;
     color: var(--techguru-white);
     counter-increment: count 1;
-    content: "0"counter(count);
+    content: "0" counter(count);
     transform: translateX(-50%);
     z-index: 1;
 }
