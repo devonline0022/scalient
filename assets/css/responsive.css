@@ -3618,8 +3618,13 @@
         display: none;
     }
 
+    .main-menu-two__wrapper-inner {
+        padding: 15px 15px 15px;
+    }
 
-
+    .main-menu .mobile-nav__toggler {
+        display: none;
+    }
 
 
 
@@ -3645,18 +3650,22 @@
         display: none;
     }
 
-
-
-
     .main-menu-two__top {
         display: none;
     }
 
     .main-menu-two__wrapper-inner {
-        padding: 0 30px 0;
+        padding: 15px 15px 15px;
     }
 
+    .main-menu-two__right {
+        display: none;
+    }
 
+    .contact-two__contact-list {
+        max-width: 100%;
+        width: 100%;
+    }
 
 
 
