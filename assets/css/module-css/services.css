@@ -86,7 +86,8 @@
 
 .servces-one__img>img {
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
+    height: 550px;
     object-fit: cover;
 }
 
@@ -135,7 +136,9 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(var(--techguru-white-rgb), .10);
-    padding-bottom: 19px;
+    /* padding-bottom: 19px; */
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .services-one__services-list li:last-child .services-one__services-single {
@@ -1392,4 +1395,12 @@
 
 .servces-one__img-2 img {
     filter: grayscale(1);
+}
+
+.services-one__arrow.leftclass {
+    right: 450px;
+}
+
+.services-one__count.leftclass {
+    left: 250px;
 }

@@ -992,7 +992,7 @@
     bottom: 51.77%;
     filter: blur(120px);
     opacity: .50;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(250, 86, 116, 0.63) 0%, rgba(7, 12, 20, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #00bae9 0%, rgba(7, 12, 20, 0) 100%);
     z-index: -1;
 }
 
