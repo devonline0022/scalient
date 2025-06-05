@@ -992,7 +992,8 @@
     flex-wrap: wrap;
     gap: 18px;
     right: -15px;
-    top: 300px;
+    /* top: 300px; */
+    top: 210px;
     transform: rotate(-90deg);
     z-index: 5;
 }

@@ -2662,6 +2662,36 @@ ul {
 }
 
 
+/* About us Section Css Start  */
+
+.aboutSec {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+
+.aboutimgBox {
+  position: relative;
+  display: block;
+  z-index: 1;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+.aboutImg2 {
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+
+
+/* About us Section Css Exit  */
+
+
+
 /* Journey Section Css Start  */
 
 .journeySec {
@@ -2694,6 +2724,28 @@ ul {
   z-index: 1;
 }
 
+.journeySec .servces-one__shape-2 {
+  position: absolute;
+  width: 962px;
+  top: 0px;
+  height: 1147px;
+  left: -491px;
+  opacity: 0.5;
+  filter: blur(60px);
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #00bae9 0%, rgba(7, 12, 20, 0) 100%);
+  z-index: -1;
+}
+
+.journeySec .servces-one__shape-3 {
+  position: absolute;
+  top: -185px;
+  right: 0;
+  mix-blend-mode: lighten;
+  z-index: -1;
+}
+
+
 /* Journey Section Css Exit  */
 
 
@@ -2709,10 +2761,56 @@ ul {
   margin-bottom: 15px;
 }
 
+.missionimgBox {
+  position: relative;
+  display: block;
+  z-index: 1;
+  border-radius: 50px;
+  padding: 25px;
+}
+
 .mission-vision-img {
   width: 100%;
-  height: 400px;
+  height: 450px;
   object-fit: contain;
+  border-radius: 50px;
 }
 
 /* Mission and Vision Section Css Exit  */
+
+
+
+/* Our Expertise Section Css Start  */
+
+.expertiseSec {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.expoertiseCard {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(270deg, rgba(36, 46, 75, 0.4) 0%, rgba(29, 37, 63, 0.4) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px 20px 20px;
+}
+
+.expertIcon {
+  width: 100px;
+}
+
+.expoertiseCard h4 {
+  font-size: 25px;
+}
+
+.expoertiseCard h5 {
+  font-size: 18px;
+}
+
+
+
+
+
+/* Our Expertise Section Css Exit  */
