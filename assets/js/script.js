@@ -335,7 +335,7 @@
 
 
 
-
+ 
   //Portfolio Two Carousel
   if ($(".portfolio-two__carousel").length) {
     $(".portfolio-two__carousel").owlCarousel({

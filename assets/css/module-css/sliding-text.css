@@ -169,7 +169,8 @@
     position: relative;
     display: block;
     background: linear-gradient(-90deg, #00BAE9 15%, #006983 100%);
-    padding: 16px 0 16px;
+    /* padding: 16px 0 16px; */
+    padding: 10px 0 10px;
     z-index: 2;
 }
 

@@ -291,7 +291,8 @@
 }
 
 .counter-two__count-box span {
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 50px;
     font-weight: 500;
     line-height: 60px !important;
     font-family: var(--techguru-font) !important;

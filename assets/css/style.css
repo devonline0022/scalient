@@ -1999,6 +1999,7 @@ ul {
 
 .main-menu-two__main-menu-box {
   display: block;
+  margin-left: 100px;
 }
 
 .main-menu-two__right {
@@ -2814,3 +2815,22 @@ ul {
 
 
 /* Our Expertise Section Css Exit  */
+
+
+.menulinkDiv ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.menulinkDiv ul li {
+  margin-bottom: 15px;
+}
+
+.menulinkDiv ul li a {
+  color: #fff;
+}
+
+.menulinkDiv ul li a:hover {
+  color: #00bae9;
+}

@@ -217,6 +217,7 @@
 
 .faq-two__shape-1 img {
     width: auto;
+    filter: hue-rotate(255deg);
 }
 
 .faq-two__shape-2 {
@@ -265,7 +266,7 @@
     position: relative;
     display: inline-block;
     font-size: 45px;
-    background: linear-gradient(270deg, #5CB0E9 0%, #3D72FC 100%);
+    background: linear-gradient(90deg, #00BAE9 10%, #006983 100%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -313,7 +314,7 @@
 }
 
 .faq-two .faq-one-accrodion .accrodion.active {
-    background-color: #6065D4;
+    background-color: rgb(0 186 233 / 5%);
 }
 
 .faq-two .faq-one-accrodion .accrodion:before {
