@@ -74,8 +74,48 @@
     position: relative;
     display: flex;
     /* align-items: center; */
-    gap: 45px;
+    /* gap: 45px; */
     flex-wrap: wrap;
+    transition: all 5s ease;
+    transform: rotateY(0deg);
+}
+
+.testInner {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* gap: 45px; */
+    flex-wrap: wrap;
+}
+
+.overlayEffect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(270deg, rgba(36, 46, 75, 0.4) 0%, rgba(29, 37, 63, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: all 5s ease;
+    transform: rotateY(0deg);
+}
+
+.testimonial-one__single:hover {
+    transform: rotateY(180deg);
+}
+
+.testimonial-one__single:hover .overlayEffect {
+    opacity: 1;
+    transition: all 5s ease;
+    transform: rotateY(0deg);
+}
+
+.testimonial-one__single:hover .overlayEffect {
+    opacity: 1;
+    transition: all 5s ease;
+    transform: rotateY(180deg);
 }
 
 .testimonial-one__img-box {
@@ -382,7 +422,7 @@
 
 .testimonial-one__carousel.owl-carousel .owl-dots {
     position: absolute;
-    top: 15%;
+    top: 3%;
     left: -50px;
     text-align: center;
     margin: 0 !important;

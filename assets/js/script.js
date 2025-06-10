@@ -89,16 +89,16 @@
           items: 1,
         },
         768: {
-          items: 1,
+          items: 2,
         },
         992: {
-          items: 1,
+          items: 2,
         },
         1200: {
-          items: 1,
+          items: 3,
         },
         1320: {
-          items: 1,
+          items: 3,
         },
       },
     });

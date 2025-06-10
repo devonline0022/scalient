@@ -473,13 +473,16 @@
     bottom: 23px;
     right: 10px;
     display: flex;
-    align-items: center;
+    align-items: self-start;
     gap: 20px;
     opacity: 0;
     transform: perspective(540px) rotateY(0deg) translateY(-100px);
     transform-origin: top;
     transition: all 500ms ease;
     z-index: 2;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .portfolio-two__box li.active .portfolio-two__content-box {

@@ -1999,7 +1999,7 @@ ul {
 
 .main-menu-two__main-menu-box {
   display: block;
-  margin-left: 100px;
+  margin-left: 300px;
 }
 
 .main-menu-two__right {
@@ -2787,6 +2787,37 @@ ul {
   width: 100%;
   height: auto;
   position: relative;
+  display: block;
+  padding: 140px 0 140px;
+  background-color: var(--techguru-black);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.expert__shape-1 {
+  position: absolute;
+  top: 70px;
+  left: -265px;
+  width: 762px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #00bae9 0%, rgba(7, 12, 20, 0) 100%);
+  opacity: 0.4;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.expert__shape-2 {
+  position: absolute;
+  bottom: 130px;
+  right: -265px;
+  width: 762px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #00bae9 0%, rgba(7, 12, 20, 0) 100%);
+  opacity: 0.4;
+  filter: blur(120px);
+  z-index: -1;
 }
 
 .expoertiseCard {
@@ -2813,7 +2844,6 @@ ul {
 
 
 
-
 /* Our Expertise Section Css Exit  */
 
 
@@ -2834,3 +2864,17 @@ ul {
 .menulinkDiv ul li a:hover {
   color: #00bae9;
 }
+
+
+
+
+
+/* New Blog Details Section Css Start  */
+
+
+
+
+
+
+/* New Blog Details Section Css Exit  */
+
