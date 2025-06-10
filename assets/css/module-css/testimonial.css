@@ -95,7 +95,7 @@
     z-index: 1;
     padding: 20px;
     border-radius: 12px;
-    background: linear-gradient(270deg, rgba(36, 46, 75, 0.4) 0%, rgba(29, 37, 63, 0.4) 100%);
+    background: #001a31;
     border: 2px solid rgba(255, 255, 255, 0.1);
     opacity: 0;
     transition: all 5s ease;
