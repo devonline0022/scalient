@@ -445,7 +445,7 @@
 .portfolio-two__title {
     position: absolute;
     left: -10px;
-    bottom: 112px;
+    bottom: 155px;
     transform: rotate(-90deg);
     opacity: 1;
     -webkit-transition: all 500ms ease;
