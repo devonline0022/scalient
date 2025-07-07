@@ -546,9 +546,230 @@
         </section>
         <!--Page Header End-->
 
-        <div class="py-5 text-center">
-            <h4> Blog SQL Tip </h4>
-        </div>
+        <!--Blog Page Start-->
+        <section class="blog-page">
+            <div class="blog-page__shape-1"></div>
+            <div class="blog-page__shape-2"></div>
+            <div class="container">
+                <div class="section-title text-center sec-title-animation animation-style1">
+                    <div class="section-title__tagline-box">
+                        <div class="section-title__tagline-shape-1"></div>
+                        <span class="section-title__tagline">News & Blog</span>
+                        <div class="section-title__tagline-shape-2"></div>
+                    </div>
+
+                    <h2 class="section-title__title title-animation">A Simple Skill That Delivers Big Impact <br>
+                        <span>Deserves Your Attention</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-6 col-md-6">
+                        <div>
+                            <P>
+                                Why It Matters
+                                At Scalient AI Solutions, we consistently see a surprising gap—even among experienced
+                                professionals—when it comes to writing SQL queries to detect duplicate records. This is
+                                a fundamental but critical skill for ensuring data accuracy, integrity, and quality in
+                                modern BI solutions and pipelines.
+                            </P>
+                            <br>
+                            <p>Whether you’re building a data warehouse, cleansing source files, or preparing reports,
+                                the ability to quickly identify duplicates can make or break your data reliability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 mx-auto my-5">
+                        <div class="blogimgBox">
+                            <img src="./assets/images/blog/blog-details-points-img.jpg" alt="" class="blogImg1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-6 col-md-6 ">
+
+                        <div class="bloginner w-100 mb-5">
+                            <div>
+                                <h3 class="mb-3">Scenario 1: Table With a Composite Primary Key</h3>
+                                <p>Goal: Detect duplicate entries in a table where a composite key (e.g., Item_Code +
+                                    Item_Country) should uniquely identify a row.</p>
+                                <h5 class="mt-3">Option 1: GROUP BY + HAVING</h5>
+
+                                <div class="mt-5">
+                                    <p>sql</p>
+                                    <br>
+                                    <p>CopyEdit</p>
+                                    <br>
+                                    <p>SELECT I.Item_Code, I.Item_Country, COUNT(*)</p>
+                                    <br>
+                                    <p>FROM Item I</p>
+                                    <br>
+                                    <p>GROUP BY I.Item_Code, I.Item_Country</p>
+                                    <br>
+                                    <p>HAVING COUNT(*) > 1;</p>
+                                    <br>
+                                    <p>Explanation: This query identifies groups with more than one occurrence of the
+                                        same
+                                        key combination—indicating duplicates.</p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 class="mt-3">Option 2: CTE + ROW_NUMBER() + COUNT()</h5>
+                                <div class="mt-5">
+                                    <p>sql</p>
+                                    <br>
+                                    <p>CopyEdit</p>
+                                    <br>
+                                    <div class="my-3">
+                                        <h4 class="mb-4">WITH RankedItems AS</h4>
+                                        <h5 class="mb-3">SELECT</h5>
+                                        <p> I.Item_Code,</p>
+                                        <br>
+                                        <p>I.Item_Country,</p>
+                                        <br>
+                                        <p>ROW_NUMBER() OVER (PARTITION BY I.Item_Code, I.Item_Country ORDER BY
+                                            I.Last_Updated DESC) AS rn,</p>
+                                        <br>
+                                        <p>COUNT(*) OVER (PARTITION BY I.Item_Code, I.Item_Country) AS duplicate_count
+                                        </p>
+                                        <br>
+                                        <p>FROM Item I</p>
+                                    </div>
+                                    <div class="my-3">
+                                        <h5 class="mb-3">SELECT *</h5>
+                                        <p> FROM RankedItems</p>
+                                        <br>
+                                        <p>WHERE duplicate_count > 1;
+                                        </p>
+                                        <br>
+                                        <p>ROW_NUMBER() OVER (PARTITION BY I.Item_Code, I.Item_Country ORDER BY
+                                            I.Last_Updated DESC) AS rn,</p>
+                                        <br>
+                                        <p>COUNT(*) OVER (PARTITION BY I.Item_Code, I.Item_Country) AS duplicate_count
+                                        </p>
+                                        <br>
+                                        <p>FROM Item I</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bloginner w-100 mb-5">
+                            <div>
+                                <h3 class="mb-3">Scenario 2: Table Without a Primary Key</h3>
+                                <p>In scenarios where no unique identifier exists, business keys (like Email and
+                                    Phone_number) become your guide.</p>
+                                <h5 class="mt-3">Option 1: GROUP BY + HAVING</h5>
+
+                                <div class="mt-5">
+                                    <p>sql</p>
+                                    <br>
+                                    <p>CopyEdit</p>
+                                    <br>
+                                    <p>SELECT e.Email, e.Phone_number</p>
+                                    <br>
+                                    <p>FROM Employees e</p>
+                                    <br>
+                                    <p>GROUP BY e.Email, e.Phone_number</p>
+                                    <br>
+                                    <p>HAVING COUNT(*) > 1;</p>
+                                    <br>
+                                    <p>Use Case: Quickly highlights duplicate employee contact details.</p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="">
+                                    <div class="my-3">
+                                        <h4 class="mb-4">Advanced Option: Using ROW_NUMBER()</h4>
+                                        <p> sql</p>
+                                        <br>
+                                        <p>CopyEdit</p>
+                                        <br>
+                                    </div>
+                                    <div class="my-3">
+                                        <h5 class="mb-3">WITH DuplicateEmployees AS</h5>
+                                        <p> WITH DuplicateEmployees AS (
+                                            SELECT Email, Phone_number,
+                                            ROW_NUMBER() OVER (PARTITION BY Email, Phone_number ORDER BY Email) AS rn
+                                            FROM Employees
+                                            )
+                                        </p>
+                                        <br>
+                                        <p>SELECT Email, Phone_number
+                                        </p>
+                                        <br>
+                                        <p>FROM DuplicateEmployees</p>
+                                        <br>
+                                        <p>WHERE rn > 1;
+                                        </p>
+                                        <br>
+                                        <h5></h5>
+                                        <ul>
+                                            <li>
+                                                <p>Easily identify and filter out extra entries.</p>
+                                            </li>
+                                            <li>
+                                                <p>Perfect for deduplication workflows where only the first (or most
+                                                    recent) row is needed.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bloginner w-100 mb-5">
+                            <div>
+                                <h3 class="mb-3">When Should You Use These Techniques?</h3>
+                                <div class="mt-5">
+                                    <p>1. To prevent duplicate inserts during ETL loads</p>
+                                    <br>
+                                    <p>2. To detect duplicates in incoming files or external feeds</p>
+                                    <br>
+                                    <p>3. To clean up staging or intermediate tables</p>
+                                    <br>
+                                    <p>4. To reconcile mismatches across systems or environments</p>
+                                    <br>
+                                    <p>5. To enhance data accuracy in BI dashboards</p>
+                                    <br>
+                                    <p>6. To maintain ongoing data governance and trust</p>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="">
+                                    <div class="my-3">
+                                        <h4 class="mb-4">Final Thoughts: Why This Matters to Your Business</h4>
+                                        <p> Duplicate records might seem like a small issue—but they can cause major
+                                            discrepancies in reporting, analytics, and business decisions. With the
+                                            right SQL skills, you can build cleaner pipelines, create accurate reports,
+                                            and drive confident decision-making.</p>
+                                        <br>
+                                        <p>At Scalient AI Solutions, we help teams build robust, duplicate-free data
+                                            architectures using best practices across SQL, Microsoft Fabric, and modern
+                                            data platforms.</p>
+                                        <br>
+                                        <p>We’d love to hear from you! How do you handle duplicate detection in your
+                                            workflows?</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-xl-12 col-lg-6 col-md-6">
+                    </div>
+                </div>
+        </section>
+        <!--Blog Page End-->
 
 
 
