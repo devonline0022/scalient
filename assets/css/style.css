@@ -2881,3 +2881,12 @@ ul {
 .experText {
   font-size: 16px;
 }
+
+.featurebox {
+  width: 100%;
+  display: flex;
+}
+
+.featureBlock h6 {
+  white-space: nowrap;
+}
