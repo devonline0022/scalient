@@ -2890,3 +2890,205 @@ ul {
 .featureBlock h6 {
   white-space: nowrap;
 }
+
+
+
+
+
+
+
+
+/* Core Technology pages Css Start  */
+
+.coreTechnologies_Div {
+  width: 100%;
+  height: auto;
+}
+
+.coretechnologiesSec {
+  position: relative;
+  display: block;
+  padding: 140px 0 133px;
+  z-index: 1;
+}
+
+.coretechnologies__left {
+  position: relative;
+  display: block;
+  margin-right: 30px;
+}
+
+.coretechnologies_list_box {
+  position: relative;
+  display: block;
+  background: linear-gradient(270deg, rgba(36, 46, 75, 0.4) 0%, rgba(29, 37, 63, 0.4) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 21px 25px 25px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+.coretechnologies_list_box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: var(--techguru-white);
+  border-bottom: 1px dashed rgba(231, 231, 232, .10);
+  padding-bottom: 12px;
+  margin-bottom: 19px;
+}
+
+.coretechnologies_list_box ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.coretechnologies_list_box ul li {
+  position: relative;
+  display: block;
+  margin-top: 8px;
+}
+
+.coretechnologies_list_box ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(var(--techguru-white-rgb), 0.05);
+  border-radius: 12px;
+  font-weight: 500;
+  color: var(--techguru-gray);
+  text-transform: capitalize;
+  padding: 12px 17px 12px;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 16px;
+}
+
+
+.coretechnologies_list_box ul li a:hover {
+  background: linear-gradient(90deg, #00BAE9 10%, #006983 100%);
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  color: #fff;
+}
+
+.coretechnologies_list_box ul li a.active {
+  background: linear-gradient(90deg, #00BAE9 10%, #006983 100%);
+  color: #fff;
+}
+
+
+.need-help-box {
+  position: relative;
+  display: block;
+}
+
+.need-help-img {
+  position: relative;
+  display: block;
+}
+
+.need-help-img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.need-help-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 24.9%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 16px;
+}
+
+.need-help-content {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+}
+
+.need-help-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--techguru-white);
+}
+
+.need-help-content h3:before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  border-top: 1px solid transparent;
+  background: #fff;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.need-help-content p {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 9px;
+}
+
+.coretechnologies__right {
+  position: relative;
+  display: block;
+}
+
+.borderLine {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(var(--techguru-white-rgb), .20);
+  margin: 31px 0 31px;
+}
+
+.imgDiv {
+  position: relative;
+  display: block;
+}
+
+.imgDiv img {
+  width: 100%;
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.OfferimgBox {
+  position: relative;
+  display: block;
+}
+
+.OfferimgBox img {
+  width: 100%;
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Core Technology pages Css Exit  */
+
+
+/* Services pages Css Start  */
+
+
+
+
+/* Services pages Css Exit  */

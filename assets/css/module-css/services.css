@@ -1028,7 +1028,8 @@
 .services-details__services-list-box {
     position: relative;
     display: block;
-    background-color: #0D1D35;
+    background: linear-gradient(270deg, rgba(36, 46, 75, 0.4) 0%, rgba(29, 37, 63, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     padding: 21px 25px 25px;
     border-radius: 16px;
     margin-bottom: 50px;
@@ -1089,7 +1090,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(270deg, #5CB0E9 0%, #3D72FC 100%);
+    background: linear-gradient(90deg, #00BAE9 10%, #006983 100%);
     border-radius: 12px;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -1136,6 +1137,7 @@
 .services-details__need-help-img img {
     width: 100%;
     border-radius: 16px;
+    filter: hue-rotate(200deg);
 }
 
 .services-details__need-help-content {
